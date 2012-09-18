@@ -1,4 +1,7 @@
 #!/bin/sh
 
+tmpdir=$(mktemp -d tune-shell.XXXXXX)
 sudo apt-get install git-core
-git clone git://github.com/syndicut/sh.git .
+git clone git://github.com/syndicut/sh.git $tmpdir
+mv $tmpdir .
+rm -rf $tmpdir
