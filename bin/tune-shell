@@ -3,5 +3,5 @@
 tmpdir=$(mktemp --tmpdir -d tune-shell.XXXXXX)
 sudo apt-get install git-core
 git clone git://github.com/syndicut/sh.git $tmpdir
-rsync -a $tmpdir .
+rsync -a $tmpdir/ ./
 rm -rf $tmpdir
