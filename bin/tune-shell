@@ -6,4 +6,4 @@ sudo apt-get install rsync
 git clone git://github.com/syndicut/sh.git $tmpdir
 rsync -a $tmpdir/ ~
 rm -rf $tmpdir
-source ~/.bash_aliases
+. ~/.bash_aliases
